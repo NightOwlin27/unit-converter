@@ -22,7 +22,11 @@ function getImperial () {
 
 
 function getMetric () {
-	let feetValue = input.value * .3048
+	let footValue = input.value * .3048
+	let gallonValue = input.value * 3.78541
+	let poundValue = input.value * .453592
 	
-	length.textContent += ` ${input.value} feet = ${feetValue.toFixed(2)} meters`;
+	length.textContent += ` ${input.value} feet = ${footValue.toFixed(2)} meters`;
+	volume.textContent += ` ${input.value} gallons = ${gallonValue.toFixed(2)} liters`;
+	mass.textContent += ` ${input.value} pounds = ${poundValue.toFixed(2)} kilos`;
 }

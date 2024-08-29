@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Unit Converter</title>
 </head>
 <body>
-    <div class="container"></div>
-        <div class="conversion">
+    <main class="main-content">
+        <section class="conversion">
             <h1>Metric/Imperial Unit Conversion</h1>
             <input type="number" name="input"/>
             <button class="btn">Convert<button>
-        </div>
-        <div class="metric info">
-            <div class="length">
+        </section>
+        <section class="metric-info">
+            <div class="metric length">
                 <h2>Length (Meter/Feet)</h2>
                 <p class="length-info"></p>
             </div>
-            <div class="volume"> 
+            <div class="metric volume"> 
                 <h2>Volume (Liters/Gallons)</h2>
                 <p class="volume-info"></p>
             </div>
-            <div class="mass"> 
+            <div class="metric mass"> 
                 <h2>Mass (Kilograms/Pounds)</h2>
                 <p class="mass-info"></p>
             </div>  
-        </div> 
+        </section> 
         <button class="night-mode">Night Mode</button>
+    </main>
     <script src="index.js"></script>
 </body>
 </html>
