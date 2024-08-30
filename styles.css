@@ -24,40 +24,39 @@ input[type=number] {
 }
 
 body {
-    background-color: black;
-    /* padding: auto auto; */
+    background-color: rgba(0, 0, 0, 0.857);
+    display: flex;
+    justify-content: center;
 }
 
 .main-content {
-    height: 
-    width: 2rem;
-    margin: 10vh;
+    width: 40%;
+    margin: 25vh;
     text-align: center;
     font-family: "Inter", sans-serif;
-
+    border: 10px solid white:
 }
 
 .conversion {
-    /* width: 285px; */
     color: white;
     background-color: #6943FF;
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;  
+    gap: 1.5rem;  
+    padding: 3rem;
 }
 
 h1 {
-
+    font-size: 2rem;
 }
 
 input {
-    /* margin: 3rem; */
-    width: 120px;
+    width: 130px;
     height: 90px;
     font-size: 4rem;
     text-align: center;
-    font-weight: bold;
+    font-weight: 750;
     margin: auto auto;
     border: 2px solid #B295FF;
     border-radius: 5px;
@@ -72,7 +71,7 @@ button {
     border-radius: 8px;
     border: none;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 550;
 }
 
 .metric-info {
@@ -80,8 +79,8 @@ button {
     background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    padding: 2rem 1rem;
+    gap: 2rem;
+    padding: 2.5rem 2rem;
 }
 
 .metric {
@@ -95,3 +94,11 @@ p {
     font-size: 1rem;
     margin-top: 1em;
 }
+
+p::before {
+    content: "0";
+    color: white;
+}
+
+/* Used p::before as a space placeholder to keep the content from
+shrinking before the text from .textcontent renders. */
